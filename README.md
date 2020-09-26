@@ -19,7 +19,7 @@ Response Data: {
 
 ***Curl command to test account registration***:
 ```
-curl -H 'Content-Type: application/json' -d '{"username": "sudheer","password":"sudheer"}' -X POST http://127.0.0.1:8000/notesapp/user
+curl -H 'Content-Type: application/json' -d '{"username": "<anyusername>","password":"<anypassword>"}' -X POST http://127.0.0.1:8000/notesapp/user
 ```
  
 
@@ -40,7 +40,7 @@ Response Data: {
  
 ***Curl command to test user login***:
 ```
-curl -H 'Content-Type: application/json' -d '{"username": "sudheer3","password":"sudheer"}' -X POST http://127.0.0.1:8000/notesapp/auth
+curl -H 'Content-Type: application/json' -d '{"username": "<anyusername>","password":"<anypassword>"}' -X POST http://127.0.0.1:8000/notesapp/auth
 ```
 
 ### List Saved Notes:
@@ -55,7 +55,7 @@ The list returned should belong to the userId passed with the request
 
 ***Curl command to test list the notes***:
 ```
-curl -H 'Content-Type: application/json' -X GET http://127.0.0.1:8000/notesapp/sites/list/3
+curl -H 'Content-Type: application/json' -X GET http://127.0.0.1:8000/notesapp/sites/list/<UserId>
 ```
 
 
@@ -74,5 +74,5 @@ Response Data: {
 
 ***Curl command to test save the note***:
 ```
-curl -H 'Content-Type: application/json' -d '{"description":"Sudheer is here"}' -X POST http://127.0.0.1:8000/notesapp/sites/3
+curl -H 'Content-Type: application/json' -d '{"description":"Sudheer is here"}' -X POST http://127.0.0.1:8000/notesapp/sites/<UserId>
 ```
