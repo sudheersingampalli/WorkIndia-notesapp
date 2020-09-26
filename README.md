@@ -16,6 +16,7 @@ Request Data: {
 Response Data: {
     'status': 'account created'
 }
+
 ***Curl command to test account registration***:
 ```
 curl -H 'Content-Type: application/json' -d '{"username": "sudheer","password":"sudheer"}' -X POST http://127.0.0.1:8000/notesapp/user
